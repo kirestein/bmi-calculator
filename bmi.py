@@ -40,7 +40,8 @@ class BMI(ctk.CTk):
             
 class ResultText(ctk.CTkLabel):
     def __init__(self, parent):
-        super().__init__(master=parent, text=22.5)
+        font = ctk.CTkFont(family=FONT, size=MAIN_TEXT_SIZE, weight='bold')
+        super().__init__(master=parent, text=22.5, font=font)
         self.grid(column=0, row=0, rowspan=2, sticky='nsew')
         
 if __name__ == '__main__':
