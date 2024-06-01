@@ -40,6 +40,8 @@ class BMI(ctk.CTk):
 
         self.mainloop()
         
+        
+        
     def update_bmi(self, *args):
         height_meter = self.height_int.get() / 100
         weight_kg = self.weight_float.get()
